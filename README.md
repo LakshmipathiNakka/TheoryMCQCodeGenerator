@@ -7,14 +7,14 @@ Open this directory in terminal and run `npm install` or `npm i`
 
 ### Conditions
 - Topic Names to be given as per following convention only:
-for JavaScript - JS
-for Java       - JAVA
-for SQL        - SQL
-for ReactJS    - REACT
-for NodeJS     - NODE
-for HTML       - HTML
-for CSS        - CSS
-for Python     - PYTHON
+for JavaScript - JS  
+for Java       - JAVA  
+for SQL        - SQL  
+for ReactJS    - REACT  
+for NodeJS     - NODE  
+for HTML       - HTML  
+for CSS        - CSS  
+for Python     - PYTHON  
 
 ### Steps
 Step-1:- Now save your obtained json file in **parent_json** directory.
