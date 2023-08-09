@@ -1,6 +1,7 @@
 ### Initialization
 Installation of nodeJs software from [node](https://nodejs.org/en/download)  
-Open this directory in terminal and run `npm install` or `npm i`  
+Open this directory in terminal and run `npm install` or `npm i`.    
+After the installation of dependencies, run `npm run setup`.  
 
 ### Pre-requisities
 - After downloading your csv file from your spreadsheet, convert your csv into json file [csv_to_json](https://data.page/csv/json)
