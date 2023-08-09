@@ -40,7 +40,7 @@ Here is the example data:
                            "do-while": "TRUE", 
                            "while": "FALSE", 
                            "None of the above": "FALSE" },
-    "difficulty_level": "EASY", 
+    "difficulty_level": "0", 
      "answer_explanation_content": "do-while loops are not explicitly a part of the Python language." 
 }
 ] 
