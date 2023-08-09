@@ -7,15 +7,15 @@ After the installation of dependencies, run `npm run setup`.
 - After downloading your csv file from your spreadsheet, convert your csv into json file [csv_to_json](https://data.page/csv/json)
 
 ### Conditions
-- Topic Names to be given as per following convention only:  
-for JavaScript - JS  
-for Java       - JAVA  
-for SQL        - SQL  
-for ReactJS    - REACT  
-for NodeJS     - NODE  
-for HTML       - HTML  
-for CSS        - CSS  
-for Python     - PYTHON  
+- Topic Names to be given as per following convention only:
+for JavaScript - JS
+for Java       - JAVA
+for SQL        - SQL
+for ReactJS    - REACT
+for NodeJS     - NODE
+for HTML       - HTML
+for CSS        - CSS
+for Python     - PYTHON
 
 ### Steps
 Step-1:- Now save your obtained json file in **parent_json** directory.  
