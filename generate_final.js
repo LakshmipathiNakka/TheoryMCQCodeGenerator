@@ -42,7 +42,6 @@ const extractQuestionsData = (prompt_responses) => {
     let final_json_sheet = [];
     
     prompt_responses.forEach(prompt_response => {
-        let defaultTagNames = ["POOL_1"];
         const topic_difficulty_level = prompt_response["difficulty_level"];
         const startIndex = prompt_response["prompt_response"].indexOf("[");
         const endIndex = prompt_response["prompt_response"].lastIndexOf("]");
@@ -50,8 +49,6 @@ const extractQuestionsData = (prompt_responses) => {
         const topicTag = "TOPIC_" + prompt_response["topic"].toUpperCase() + "_MCQ";
         const sourceTag = "SOURCE_" + prompt_response["resource_name"].toUpperCase();
         const subTopicTag = prompt_response["sub_topic"].toUpperCase(); 
-        defaultTagNames.push(topicTag);
-        defaultTagNames.push(subTopicTag);
         let resources = {
           "resource_name": prompt_response["resource_name"], 
           "resource_url": prompt_response["resource_url"]
@@ -59,8 +56,11 @@ const extractQuestionsData = (prompt_responses) => {
 
         prompt_response_json.forEach(response => {
             let question_data = {};
+            let defaultTagNames = ["POOL_1"];
             const blooms_difficulty_level = response["difficulty_level"];
             const question_difficulty_level = Math.max(topic_difficulty_level, blooms_difficulty_level);
+            defaultTagNames.push(topicTag);
+            defaultTagNames.push(subTopicTag);
             defaultTagNames.push("DIFFICULTY_" + difficulty_level[question_difficulty_level]);
             defaultTagNames.push(sourceTag);    
             question_data["question_id"] = v4();
@@ -80,6 +80,7 @@ const extractQuestionsData = (prompt_responses) => {
             question_data["explanation_content_type"] = "TEXT";
             question_data["resource_name"] = resources["resource_name"];
             question_data["resource_url"] = resources["resource_url"];
+            // console.log(question_data["question_content"], topic_difficulty_level, blooms_difficulty_level, question_difficulty_level, defaultTagNames);
             final_json_sheet.push(question_data);
 
             for (let i=0; i<5; i++) {
