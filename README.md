@@ -90,12 +90,12 @@ GOOGLE_KEYFILE_PATH=path/to/your/credentials.json
 Replace `your_json_file_name`, `your_azure_openai_endpoint`, `your_azure_api_key`, `your_google_sheet_id`, and `path/to/your/credentials.json` with the actual values.
 
 Step-5:- Run the following command in terminal: `node generate_final.js`
-Step-6:- Run the following command in terminal: `node generate_ca.js`
-Step-7:- Run the following command in terminal: `node generate_zip.js`
+Review the content whch is generated in the sheet.
+
 
 ### Results
 
-- Now you can find your intermediate output file in **responses_json** directory with suffix as "\_res8onses.json" file.
+- Now you can find your intermediate output file in **responses_json** directory with suffix as "\_responses.json" file.
 - Now you can find your json for Review SHeet file in **final_responses** directory with suffix as "\_final_responses.json" file.
 - Now you can find your final output json file in **ca_responses** directory with suffix as "\_ca.json" file.
 - Now you can directly find your final zip file in **output_zip_files** directory, which is ready for JSON Conversion at Admin panel.
